@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — Iceberg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 22h20L12 2z" fill="#070E1C" stroke="#070E1C" stroke-width="1.5"/>
+          <path d="M12 8L6 20h12L12 8z" fill="#070E1C"/>
+        </svg>
+      </div>
+      Iceberg
+    </a>
+    <div class="nav-links">
+      <a href="how-it-works.html" class="active">How it works</a>
+      <a href="intro-paths.html">Intro paths - coming soon</a>
+      <a href="try-it-live.html">Try it live</a>
+      <a href="why-iceberg.html">Why Iceberg</a>
+      <a href="pricing.html">Pricing</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="#" class="btn-ghost">Login</a>
+      <a href="try-it-live.html" class="btn-primary">Send a mandate &rarr;</a>
+    </div>
+    <button class="nav-mobile-toggle" onclick="document.getElementById('nav').classList.toggle('mobile-open')">&#9776;</button>
+  </div>
+</nav>
+
+<div style="padding-top:80px"></div>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-label fade-up">THE PLATFORM</div>
+    <h2 class="fade-up">From mandate upload to deal execution in minutes.</h2>
+    <p class="how-sub fade-up">The spreadsheet + inbox workflow that boutique sell-side M&amp;A and capital raising advisors still run today - replaced with a single execution platform.</p>
+    <div class="core-promise fade-up">
+      <span class="core-promise-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--green)" stroke="none"><polygon points="12,2 2,22 22,22"/></svg></span>
+      <p>Upload a mandate. See the full investor/buyer universe. Know exactly who to call first - and how to reach them.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step-card fade-up">
+        <div class="step-num">1</div>
+        <h4>Upload the Mandate</h4>
+        <p>Drop in your IM and existing contacts. Iceberg starts building immediately - no setup, no configuration.</p>
+        <ul class="step-list">
+          <li>IM or mandate summary</li>
+          <li>Your existing black book</li>
+          <li>Sector and thesis context</li>
+        </ul>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-num">2</div>
+        <h4>Build the Investor/Buyer Universe</h4>
+        <p>The deepest and broadest sourcing process on the planet. Not prompt-based search - structured universe building.</p>
+        <ul class="step-list">
+          <li>Lookalike and adjacent investors/buyers</li>
+          <li>Comparable deal participants</li>
+          <li>Non-obvious, high-conviction matches</li>
+        </ul>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-num">3</div>
+        <h4>Map Every Intro Path</h4>
+        <p>Every investor/buyer comes with the fastest path to reach them. Full network visibility across every possible route.</p>
+        <ul class="step-list">
+          <li>2nd-degree intro pathways <span class="badge-live-sm" style="font-size:10px;">Coming Soon</span></li>
+          <li>Shared deal history signals</li>
+          <li>Relationship distance scoring</li>
+        </ul>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-num">4</div>
+        <h4>Execute and Adapt</h4>
+        <p>Run outreach inside Iceberg. As exits happen and engagement lands - the universe re-ranks.</p>
+        <ul class="step-list">
+          <li>Dynamic contact re-ranking</li>
+          <li>Live market event triggers</li>
+          <li>Engagement signal tracking</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Universe map card + video -->
+    <div class="universe-split fade-up">
+      <div class="universe-card">
+        <p class="universe-card-caption">This is what your deal looks like when fully mapped - live in the platform.</p>
+        <div class="universe-card-header">
+          <span class="universe-card-title">Solbox - Series A Capital Raise</span>
+          <span class="universe-card-meta">B2B Logistics SaaS &middot; $8M &middot; Sydney</span>
+          <span class="badge-live">LIVE</span>
+        </div>
+        <div class="universe-transform">
+          <span class="universe-transform-num">141</span>
+          <span class="universe-transform-arrow">&rarr;</span>
+          <span class="universe-transform-result">~300 prioritised &middot; ~1,500 sourceable</span>
+        </div>
+        <div class="universe-table">
+          <div class="universe-table-row">
+            <span class="universe-table-type">VC</span>
+            <div class="universe-table-bar"><div class="universe-table-bar-fill" style="width:90%"></div></div>
+            <span class="universe-table-count">90</span>
+          </div>
+          <div class="universe-table-row">
+            <span class="universe-table-type">Angels</span>
+            <div class="universe-table-bar"><div class="universe-table-bar-fill" style="width:61%"></div></div>
+            <span class="universe-table-count">61</span>
+          </div>
+          <div class="universe-table-row">
+            <span class="universe-table-type">Strategic</span>
+            <div class="universe-table-bar"><div class="universe-table-bar-fill" style="width:53%"></div></div>
+            <span class="universe-table-count">53</span>
+          </div>
+          <div class="universe-table-row">
+            <span class="universe-table-type">UHNW</span>
+            <div class="universe-table-bar"><div class="universe-table-bar-fill" style="width:9%"></div></div>
+            <span class="universe-table-count">9</span>
+          </div>
+        </div>
+        <div class="universe-intro-callout"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>47 warm intro pathways identified</div>
+        <div class="universe-chips">
+          <span class="universe-chip">3 exits detected - universe updated</span>
+          <span class="universe-chip">Blackbird re-ranked &rarr; #1 match</span>
+        </div>
+      </div>
+      <div class="universe-split-video">
+        <video autoplay muted loop playsinline>
+          <source src="https://ik.imagekit.io/2z8yysunx/JRNY/Richard%20Property%20Advisers/Landing%20Page/Iceberg/videoplayback.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 22h20L12 2z" fill="#070E1C" stroke="#070E1C" stroke-width="1.5"/>
+            <path d="M12 8L6 20h12L12 8z" fill="#070E1C"/>
+          </svg>
+        </div>
+        Iceberg
+      </div>
+      <div class="footer-links">
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#">Data Security</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Iceberg Intelligence Pty Ltd</div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

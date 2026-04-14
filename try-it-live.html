@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Try It Live — Iceberg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 22h20L12 2z" fill="#070E1C" stroke="#070E1C" stroke-width="1.5"/>
+          <path d="M12 8L6 20h12L12 8z" fill="#070E1C"/>
+        </svg>
+      </div>
+      Iceberg
+    </a>
+    <div class="nav-links">
+      <a href="how-it-works.html">How it works</a>
+      <a href="intro-paths.html">Intro paths - coming soon</a>
+      <a href="try-it-live.html" class="active">Try it live</a>
+      <a href="why-iceberg.html">Why Iceberg</a>
+      <a href="pricing.html">Pricing</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="#" class="btn-ghost">Login</a>
+      <a href="try-it-live.html" class="btn-primary">Send a mandate &rarr;</a>
+    </div>
+    <button class="nav-mobile-toggle" onclick="document.getElementById('nav').classList.toggle('mobile-open')">&#9776;</button>
+  </div>
+</nav>
+
+<div style="padding-top:80px"></div>
+
+<!-- ========== DEAL ASSISTANT ========== -->
+<section class="deal-assistant">
+  <div class="container">
+    <div class="deal-assistant-inner fade-up">
+      <div class="section-label">TRY IT LIVE</div>
+      <h2>5-10 names you should have already called.</h2>
+      <p class="deal-assistant-sub">Tell us about a deal. We'll show you what's in our universe - including the investors and buyers you should already be talking to.</p>
+      <p class="deal-assistant-note">No signup. No booking form. 30 seconds. Most advisors see contacts they didn't know were there.</p>
+      <div class="deal-assistant-window">
+        <div class="deal-assistant-chrome">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <span class="deal-assistant-chrome-label">iceberg - mandate universe analysis</span>
+        </div>
+        <div class="deal-assistant-body">
+          <div class="prompt-label">Describe your deal.</div>
+          <div class="prompt-sub">Sector, deal size, geography, stage. That's enough to get started.</div>
+          <textarea id="deal-input" placeholder="E.g. We're running a $8M Series A for a B2B logistics SaaS in Sydney. Targeting Australian and Asian VC with ecomm or supply chain thesis. Open to strategic acquirers from 3PL incumbents..."></textarea>
+          <div class="deal-chips">
+            <button class="deal-chip" onclick="setDealChip('SaaS Capital Raise')">SaaS Capital Raise</button>
+            <button class="deal-chip" onclick="setDealChip('M&amp;A Trade Sale')">M&amp;A Trade Sale</button>
+            <button class="deal-chip" onclick="setDealChip('PE Buyout')">PE Buyout</button>
+            <button class="deal-chip" onclick="setDealChip('Infrastructure / Real Assets')">Infrastructure / Real Assets</button>
+          </div>
+          <button class="btn-primary" onclick="runDealAssistant()" id="deal-submit">Show me my investor/buyer universe</button>
+
+          <div class="deal-loading" id="deal-loading">
+            <div class="deal-loading-dots"><span></span><span></span><span></span></div>
+            <p style="margin-top:12px;font-size:14px;">Building your investor/buyer universe...</p>
+          </div>
+
+          <div class="deal-result" id="deal-result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 22h20L12 2z" fill="#070E1C" stroke="#070E1C" stroke-width="1.5"/>
+            <path d="M12 8L6 20h12L12 8z" fill="#070E1C"/>
+          </svg>
+        </div>
+        Iceberg
+      </div>
+      <div class="footer-links">
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#">Data Security</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Iceberg Intelligence Pty Ltd</div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
