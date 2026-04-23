@@ -4103,3 +4103,99 @@ a { color: inherit; text-decoration: none; }
   padding-top: 10px;
   border-top: 1px dashed var(--border);
 }
+
+/* ========== 23 — AGENT GRID (four agents) ========== */
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.agent-card {
+  background: linear-gradient(180deg, var(--bg-700) 0%, var(--bg-800) 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.agent-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-green);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+.agent-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.agent-card-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--text-400);
+  letter-spacing: 1px;
+}
+.agent-card-status {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 4px 9px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.agent-card-status-live {
+  background: rgba(34,197,94,0.12);
+  color: var(--green);
+  border: 1px solid rgba(34,197,94,0.3);
+}
+.agent-card-status-soon {
+  background: rgba(148,163,184,0.08);
+  color: var(--text-400);
+  border: 1px solid var(--border);
+}
+.agent-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(34,197,94,0.08);
+  border: 1px solid var(--border-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.agent-card h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+.agent-card p {
+  font-size: 14px;
+  color: var(--text-300);
+  line-height: 1.65;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+.agent-card-replaces {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-400);
+  padding-top: 14px;
+  border-top: 1px dashed var(--border);
+  letter-spacing: 0.3px;
+}
+.agent-card-soon {
+  opacity: 0.78;
+}
+.agent-card-soon:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .agent-grid { grid-template-columns: 1fr; }
+  .agent-card { padding: 24px 22px; }
+}
